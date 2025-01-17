@@ -1,0 +1,25 @@
+.calc {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 320px;
+    font-size: 24px;
+}
+
+.input {
+    height: 36px;
+}
+
+.button {
+    font-size: 24px;
+}
+
+#operator {
+    font-size: 24px;
+    height: 36px;
+    width: 160px;
+}
+
+#result {
+    text-align: center;
+}

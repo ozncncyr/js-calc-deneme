@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hesap Makinesi (Input)</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./hMakInput.js" defer></script>
+  </head>
+  <body>
+    <button onclick="location.href='./index.html'">Ana Sayfa</button>
+    <button onclick="location.href='./hesapMakinesi-noReturn.html'">
+      Hesap Makinesi (Returnsuz)
+    </button>
+    <button onclick="location.href='./hesapMakinesi-withReturn.html'">
+      Hesap Makinesi (Return)
+    </button>
+    <br /><br /><br /><br />
+    <hr />
+    <form class="calc">
+      <h3>Hesap Makinesi</h3>
+      <label for="n1" class="input-label">
+        1. Sayı: <input type="number" class="input" name="n1" id="n1" />
+      </label>
+      <label for="n2" class="input-label">
+        2. Sayı: <input type="number" class="input" name="n2" id="n2" />
+      </label>
+      <label for="operator" class="input-label">
+        İşlem:
+        <select name="operator" id="operator">
+          <option value="toplama">Toplama</option>
+          <option value="cikarma">Çıkarma</option>
+          <option value="carpma">Çarpma</option>
+          <option value="bolme">Bölme</option>
+          <!-- <option value="kitle">Vücut Kitle</option>    VÜCUT KİTLE ENDEKSİ (TROLL) -->
+        </select>
+      </label>
+      <button type="button" onclick="hesapla()" class="button" id="calculate">
+        Hesapla
+      </button>
+      <label id="result">- Sonuç -</label>
+    </form>
+  </body>
+</html>
