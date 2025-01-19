@@ -8,7 +8,7 @@ function hesapla() {
     islem = prompt("Lütfen İşlem seçiniz:\n1. Toplama\n2. Çıkarma\n3. Çarpma\n4. Bölme"); 
     switch (islem) {
         case "1":
-            return alert("Sonuç: " + (sayi1 + sayi2));
+            alert("Sonuç: " + (sayi1 + sayi2));
             break;
         case "2":
             alert("Sonuç: " + (sayi1 - sayi2));
